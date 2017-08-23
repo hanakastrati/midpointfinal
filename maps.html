@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="gmaps.js"></script>
+    <script type="text/javascript" src="latlng.js"></script>
+
+
+</head>
+
+<body>
+  <div class="tab">
+  <h1 id="title"> Midpoint </h1>
+  <button class="tablinks" id="findmid"  >Find Your Midpoint</button>
+  <button class="tablinks" id="about">About Us</button>
+</div>
+
+<div id="aboutpage">
+<div id = "place">About Us</div>
+<div class="pic2">
+  <img src="https://static.wixstatic.com/media/5be07c_44246dab7f7641d79d7e5d83e284fc54~mv2.png/v1/fill/w_200,h_200,al_c/5be07c_44246dab7f7641d79d7e5d83e284fc54~mv2.png" />
+</div>
+<div class="background">
+  <div class="transbox">
+  <div class="pic1">
+  <img src="http://cdn2.sportngin.com/attachments/news_article/6827/8505/girlswhocodegwc-logo.png" />
+      <p id = "abt-us-text">Midpoint was created by Alex West, Hannah Whitmore, Kamala Hasanova, Febby Chang, and Hana Kastrati. The Girls Who Code 2017 Summer Immersion Program gave us the skill set necessary and opportunity to build the site. Throughout the weeks we spent learning alongside one another we were able to become close and see our common interests. For some of us, Girls Who Code was a first experience in computer science, making it all the more exciting to develop a program that could directly help people in their daily lives.  </p>
+        
+    
+</div>
+
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+  <div id="container">
+
+
+      <div id="addresses">
+
+<h3> Select an Activity </h3>
+ <select id="activitySelect">
+<option value="Movies">Movies</option>
+<option value="Shopping">Shopping</option>
+  <option value="Restaurants">Restaurants</option>
+</select>
+
+<a id="activityButton"> Submit </a>
+
+
+
+      <h3>Enter your addresses below</h3>
+        <input type="text" id="my-address">
+        <button id="getCords" onClick="codeAddress();">Submit</button>
+        
+        <input type="text" id="my-address1">
+        <button id="getCords1" onClick="codeAddress1();">Submit</button>
+        
+        <button id="midpoint" onClick = "findmidpoint()";>Find your Midpoint</button>
+      </div>
+
+      <div id="map"></div>
+
+      <div id="right-panel">
+        <h2> Results </h2>
+        <ul id="places"></ul>
+        <button id="more">More Results</button>
+      </div>
+
+
+        <p id = "lat"></p>
+        <p id = "long"></p>
+        <p id = "lat1"></p>
+        <p id = "long1"></p>
+        <p id = "latAvg"></p>
+        <p id = "lngAvg"></p>
+    
+  </div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOxyk1OVAmZX34_P7lMJ5aAnXQZF-5lR0&callback=initMap&libraries=places&sens"></script>
+</body>
+
+</html>

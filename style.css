@@ -1,0 +1,330 @@
+body {
+    width: 100%;
+  height: 100%;
+
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+} 
+
+#map {
+  float: right;
+  height: 100vh;
+  width: 70%;
+}
+
+#addresses {
+  float: left;
+  width: 30%;
+  height: 100vh;
+  background: lightgray;
+  text-align: center;
+}
+
+#midpoint {
+    margin-top: 25px;
+    background-color: #80baed;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #80baed;
+}
+
+ #midpoint:hover{
+  background-color: white;
+  color: black;
+  border-color: #80baed;
+  border-style: solid;
+  border-radius: 5px;
+  
+ }
+
+#getCords, 
+#getCords1, #activityButton{
+margin-top: 20px;
+background-color: #80baed;
+border: none;
+color: white;
+padding: 10px 15x;
+text-align: center;
+font-family: 'Libre Baskerville', serif;
+display: inline-block;
+font-size: 18px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+border-width: 1px;
+border-radius: 1px;
+border-color:#80baed ;
+border-style: solid;
+
+}
+
+#activityButton {
+  text-decoration: none;
+  padding: 5px;
+}
+
+select {
+    border: none;
+    color: white;
+    padding:15px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #80baed;
+}
+
+#getCords:hover, #getCords1:hover{
+background-color: white;
+color: black;
+border-color: #80baed;
+border-style: solid;
+
+}
+
+#my-address, #my-address1 {
+font-size: 16px;
+}
+
+#my-address1 {
+margin-top: 20px;
+}
+
+#right-panel {
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 2%;
+  z-index: 100;
+}
+
+    #right-panel select, #right-panel input {
+  font-size: 15px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+#right-panel {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 5px;
+  top: 62%;
+  right: 5%;
+  margin-top: -195px;
+  height: 330px;
+  width: 200px;
+  padding: 5px;
+  z-index: 5;
+  border: 1px solid #999;
+  background: #fff;
+}
+h2 {
+  font-size: 22px;
+  margin: 0 0 5px 0;
+  font-family: 'Libre Baskerville', serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  height: 271px;
+  width: 200px;
+  overflow-y: scroll;
+}
+li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+li:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+#more {
+  width: 100%;
+  background-color: #80baed;
+  border: none;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  
+}
+
+.tab {
+  height: 50px;
+  padding-right: 30px;
+}
+
+.tablinks {
+  float: right;
+  margin: 5px 0 0 0;
+   background-color: #80baed;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  display: inline-block;
+  font-size: 18px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-width: 5px;
+  border-radius: 5px;
+  border-width: 5px;
+  border-style: solid;
+  margin-left: 25px;
+}
+
+#title {
+  float: left;
+  position: absolute;
+  left: 30px;
+  top: -5px;
+}
+
+
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: grey;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  padding: 5px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  left: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#place{
+    
+ position: fixed;
+ top: 200px;
+ left: 46%;
+ font-size: 30px;
+
+}
+.pic1 img {
+  height: 70px;
+  width: 150px;
+}
+/*.pic2 img{*/
+/*    height: 200px;*/
+/*  width: 200px;*/
+/*  position: fixed;*/
+/*  left: 400px;*/
+/*}*/
+/*body {*/
+/*    background: url(http://www.occupygermany.org/wp-content/uploads/2015/05/washington-web-design-services.jpg) no-repeat center fixed; */
+/*}*/
+
+
+}
+.pic1 img {
+  height: 60px;
+  width: 150px;
+  top: 100px;
+}
+.pic2 img{
+    height: 200px;
+  width: 200px;
+  position: fixed;
+  left: 70%;
+}
+body {
+    background: url(http://www.occupygermany.org/wp-content/uploads/2015/05/washington-web-design-services.jpg) no-repeat center fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}   
+
+
+
+div.transbox {
+    margin: 50px;
+    background-color: white;
+    border: 1px dotted black;
+    opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    position: fixed;
+    height: 300px;
+    width: 500px;
+    left: 30%;
+    top: 200px;
+    
+}
+
+div.transbox p {
+    margin: 10%;
+    font-weight: bold;
+    color: black;
+}
+
+#abt-us-text{
+    position: relative;
+    top: -30px;
+    
+}
